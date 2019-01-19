@@ -6,6 +6,7 @@ const R = styled.input.attrs({
   type: "radio"
 })`
   & + span {
+    
     padding-left: 22px;
     &:not(:empty) {
       padding-left: 30px;
@@ -28,11 +29,10 @@ const R = styled.input.attrs({
       border-radius: 50%;
     }
     &:after {
-      width: 22px;
-      height: 22px;
+      width: 25px;
+      height: 25px;
       background: #fff;
       opacity: 0;
-      transform: scale(0.6);
     }
   }
   &:checked + span {

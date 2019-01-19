@@ -28,18 +28,18 @@ const R = styled.input.attrs({
     }
     &:after {
       width: 5px;
-      height: 9px;
+      height: 8px;
       border: 2px solid #fff;
       border-top: 0;
       border-left: 0;
-      left: 8px;
-      top: 5px;
+      left: 15px;
+      top: 50px;
       transform: rotate(20deg);
     }
   }
   &:checked + span {
     &:after {
-      transform: rotate(43deg) translate(1px, 0);
+      transform: rotate(34deg) translate(11px, 1px);
     }
   }
 `;

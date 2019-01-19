@@ -23,10 +23,16 @@ const R = styled.input.attrs({
       background: var(--lightgrey-color);
     }
   }
+  &:not(:checked) + span {
+    &:after {
+      transform: translate(4px, 5px) scale(0.9);
+    }
+  }
+
   &:checked + span {
     &:after {
       background: #fff;
-      transform: translateX(16px) scale(0.9);
+      transform: translate(23px, 5px) scale(0.9);
     }
   }
 

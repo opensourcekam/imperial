@@ -31,7 +31,7 @@ const theme: IThemeInterface = {
     "headline": "#3F4656"
   },
   border: {
-    "radius": "",
+    "radius": "15px",
   },
   box: {
     shadow: "none",

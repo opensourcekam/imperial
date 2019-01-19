@@ -24,7 +24,7 @@ const R = styled.input.attrs({
   }
   & + span {
     &:before {
-      border-radius: var(--radius-border);
+      border-radius: 4px;
     }
     &:after {
       width: 5px;

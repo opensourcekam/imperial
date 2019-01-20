@@ -1,6 +1,5 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { color } from "@storybook/addon-knobs/react";
 import Button from ".";
 import { Icon } from "..";
 import ICONS from "../../icons";

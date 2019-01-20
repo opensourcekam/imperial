@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import * as React from "react";
+import styled from "../../styled-components";
 import Base from "../Input/Base";
 
 const R = styled.input.attrs({

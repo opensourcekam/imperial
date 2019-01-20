@@ -3,7 +3,7 @@ import { configure, setAddon, addDecorator } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs/react";
 import JSXAddon from "storybook-addon-jsx";
 import styled from '../src/styled-components';
-import Imperial from '../src/ImperialProvider';
+import Imperial from '../src/Imperial';
 import { theme } from '../src/theme';
 
 const Wrapper = styled.div`
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 addDecorator(story =>
   <Wrapper>
     <Imperial
-      flat
+      shadow
       roundness={10}
       theme={theme}
     />

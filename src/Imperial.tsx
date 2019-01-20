@@ -9,13 +9,13 @@ interface IThemeColorsOverrides {
 
 export interface IProps {
   colors?: IThemeColorsOverrides;
-  flat?: boolean;
+  shadow?: boolean;
   roundness?: number;
 }
 
 export default class ImperialProvider extends React.Component<IProps, any> {
   public componentWillMount() {
-    const { colors, flat, roundness } = this.props;
+    const { colors, shadow, roundness } = this.props;
     const newTheme: IThemeInterface = {
       ...theme,
       color: {
@@ -26,12 +26,12 @@ export default class ImperialProvider extends React.Component<IProps, any> {
         ...theme.border,
         radius: `${roundness}px`
       },
-      ...(flat && {
+      ...(shadow && {
         box: {
-          shadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);",
+          ...theme.box,
+          shadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
           hovershadow:
-            "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);",
-          hovertransition: "box-shadow 0.3s cubic-bezier(.25,.8,.25,1);"
+            "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
         }
       })
     };

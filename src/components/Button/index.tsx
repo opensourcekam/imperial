@@ -18,12 +18,16 @@ const Button = styled.button`
   font-weight: 600;
   background: var(--color);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: var(--shadow-box);
   &:link,
   &:active,
   &:visited,
   &:focus {
     color: var(--text-color);
+  }
+  &:hover {
+    box-shadow: var(--hovershadow-box);
   }
   svg {
     position: relative;

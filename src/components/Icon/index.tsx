@@ -1,40 +1,30 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import * as React from "react";
+import ICONS from "../../icons";
+interface IIconProps {
+  icon: ICONS;
+  color?: string;
+  size?: number;
+}
 
-const Icon = props => {
-	const styles = {
-		svg: {
-			display: 'inline-block',
-			verticalAlign: 'middle',
-		},
-		path: {
-			fill: props.color,
-		},
-	};
+const Icon: React.SFC<IIconProps> = ({ color, icon, size }) => (
+  <svg
+    style={{
+      display: "inline-block",
+      verticalAlign: "middle"
+    }}
+    width={`${size}rem`}
+    height={`${size}rem`}
+    viewBox="0 0 1024 1024"
+  >
+    <path
+      style={{
+        fill: color
+      }}
+      d={icon}
+    />
+  </svg>
+);
 
-	return (
-		<svg
-			style={styles.svg}
-			width={`${props.size}rem`}
-			height={`${props.size}rem`}
-			viewBox="0 0 1024 1024"
-		>
-			<path
-				style={styles.path}
-				d={props.icon}
-			></path>
-		</svg>
-	);
-};
-
-Icon.propTypes = {
-	icon: PropTypes.string.isRequired,
-	size: PropTypes.number,
-	color: PropTypes.string,
-};
-
-Icon.defaultProps = {
-	size: 1
-};
+Icon.defaultProps = { size: 1 };
 
 export default Icon;

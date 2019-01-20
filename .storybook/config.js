@@ -20,10 +20,11 @@ const Wrapper = styled.div`
 addDecorator(story =>
   <Wrapper>
     <Imperial
-      shadow
-      roundness={10}
-      theme={theme}
-    />
+      colors={{
+        primary: "rebeccapurple",
+        secondary: "silver",
+        tertiary: "orange"
+      }} />
     {story()}
   </Wrapper>
 );

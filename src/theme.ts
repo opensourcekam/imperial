@@ -22,16 +22,16 @@ interface IBox {
 
 const theme: IThemeInterface = {
   color: {
-    primary: "#F44336",
-    secondary: "#1E88E5",
-    tertiary: "#FDD835",
-    "lightgrey": "#CDD9ED",
-    "heavygrey": "#99A3BA",
-    "text": "#6C7486",
-    "headline": "#3F4656"
+    primary: "#8C6FF0",
+    secondary: "#5628EE",
+    tertiary: "#F6D87C",
+    lightgrey: "#CDD9ED",
+    heavygrey: "#99A3BA",
+    text: "#6C7486",
+    headline: "#3F4656"
   },
   border: {
-    "radius": "15px",
+    radius: "3px",
   },
   box: {
     shadow: "none",

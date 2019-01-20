@@ -25,14 +25,14 @@ const R = styled.input.attrs({
   }
   &:not(:checked) + span {
     &:after {
-      transform: translate(4px, 5px) scale(0.9);
+      transform: translate(4px, 4px) scale(0.9);
     }
   }
 
   &:checked + span {
     &:after {
       background: #fff;
-      transform: translate(23px, 5px) scale(0.9);
+      transform: translate(21px, 4px) scale(0.9);
     }
   }
 

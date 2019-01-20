@@ -1,8 +1,36 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { color } from '@storybook/addon-knobs/react';
+import { color } from "@storybook/addon-knobs/react";
 import Button from "./";
+import { Icon } from "..";
+import ICONS from "../../icons";
 
 storiesOf("Button", module)
-  .add("base", () => <Button disabled>Click me</Button>)
-  .addWithJSX("base withJSX", () => <Button color={color('color', 'green', 'group1')}>Hello</Button>);
+  .addWithJSX("Base", () => <Button>Imperial</Button>)
+  .addWithJSX("Border Button", () => (
+    <Button className="border">Imperial</Button>
+  ))
+  .addWithJSX("Small", () => <Button className="sm">Imperial</Button>)
+  .addWithJSX("Small Border", () => (
+    <Button className="sm border">Imperial</Button>
+  ))
+  .addWithJSX("Base with Icon", () => (
+    <Button>
+      <Icon icon={ICONS.TWITTER} /> Imperial
+    </Button>
+  ))
+  .addWithJSX("Icon", () => (
+    <Button className="icon">
+      <Icon icon={ICONS.TWITTER} />
+    </Button>
+  ))
+  .addWithJSX("Small Icon", () => (
+    <Button className="sm icon">
+      <Icon icon={ICONS.CLOUD_CHECK} />
+    </Button>
+  ))
+  .addWithJSX("Small Icon Border", () => (
+    <Button className="sm border icon">
+      <Icon icon={ICONS.CLOUD_CHECK} />
+    </Button>
+  ));

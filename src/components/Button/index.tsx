@@ -1,12 +1,4 @@
-import * as React from "react";
 import styled from "../../styled-components";
-
-// interface Props {
-//   children?: React.ReactNode;
-//   onClick: () => void;
-//   disabled?: boolean;
-//   className: string;
-// }
 
 const Button = styled.button`
   border-radius: var(--radius-border);
@@ -19,7 +11,7 @@ const Button = styled.button`
   position: relative;
   white-space: nowrap;
   border: none;
-  color: var(--text-color);
+  color: var(--text);
   padding: 9px 24px;
   font-size: 14px;
   line-height: 22px;
@@ -42,7 +34,7 @@ const Button = styled.button`
     vertical-align: top;
     font-weight: normal;
     margin: 2px 0;
-    fill: var(--text-color);
+    fill: var(--text);
     &.right {
       left: auto;
       right: -4px;

@@ -39,7 +39,7 @@ const R = styled.input.attrs({
   }
   &:checked + span {
     &:after {
-      transform: rotate(34deg) translate(11px, 1px);
+      transform: rotate(34deg) translate(10px, 0px);
     }
   }
 `;

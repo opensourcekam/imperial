@@ -19,7 +19,11 @@ const Wrapper = styled.div`
 
 addDecorator(story =>
   <Wrapper>
-    <Imperial flat theme={theme} />
+    <Imperial
+      flat
+      roundness={10}
+      theme={theme}
+    />
     {story()}
   </Wrapper>
 );

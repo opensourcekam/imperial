@@ -29,8 +29,8 @@ const R = styled.input.attrs({
       border-radius: 50%;
     }
     &:after {
-      width: 25px;
-      height: 25px;
+      width: 22px;
+      height: 22px;
       background: #fff;
       opacity: 0;
     }

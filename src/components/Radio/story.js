@@ -4,5 +4,5 @@ import Radio from './';
 
 storiesOf('Radio', module)
 	.add('base', () =>
-		<Radio>Yo</Radio>
+		<Radio checked>Yo</Radio>
 	);

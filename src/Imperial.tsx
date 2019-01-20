@@ -13,7 +13,7 @@ export interface IProps {
   roundness?: number;
 }
 
-export default class ImperialProvider extends React.Component<IProps, any> {
+class Imperial extends React.Component<IProps, any> {
   public componentWillMount() {
     const { colors, shadow, roundness } = this.props;
     const newTheme: IThemeInterface = {
@@ -88,3 +88,5 @@ export default class ImperialProvider extends React.Component<IProps, any> {
     return null;
   }
 }
+
+export { Imperial };

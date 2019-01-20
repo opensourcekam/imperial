@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from 'styled-components';
 import { storiesOf } from "@storybook/react";
 import Icon from ".";
-import ICONS from "../../icons";
+import {ICONS} from "../../icons";
 
 const Container = styled.div`
 	height: 100vh;

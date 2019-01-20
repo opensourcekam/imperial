@@ -1,5 +1,5 @@
 import * as React from "react";
-import ICONS from "../../icons";
+import {ICONS} from "../../icons";
 interface IIconProps {
   icon: ICONS;
   color?: string;

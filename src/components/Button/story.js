@@ -2,7 +2,7 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from ".";
 import { Icon } from "..";
-import ICONS from "../../icons";
+import { ICONS } from "../../icons";
 
 storiesOf("Button", module)
   .addWithJSX("Base", () => <Button>Imperial</Button>)

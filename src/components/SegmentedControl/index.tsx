@@ -1,8 +1,7 @@
 import * as React from "react";
 import styled from "../../styled-components";
-import Input from "../Input";
 
-interface ISegmentedControlProps {
+export interface ISegmentedControlProps {
   name?: string;
   values: string[];
 }

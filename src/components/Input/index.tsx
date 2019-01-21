@@ -4,12 +4,10 @@ import Checkbox from "../Checkbox";
 import Switch from "../Switch";
 import Text from "../Text";
 
-const Input = {
+export default {
   Text,
   Switch,
   Checkbox,
   Radio,
   SegmentedControl
 };
-
-export default Input;

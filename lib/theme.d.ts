@@ -2,19 +2,19 @@ interface IColors {
     primary: string;
     secondary: string;
     tertiary: string;
-    "lightgrey": string;
-    "heavygrey": string;
-    "text": string;
-    "headline": string;
+    lightgrey: string;
+    heavygrey: string;
+    text: string;
+    headline: string;
     [key: string]: string;
 }
 interface IBorders {
-    "radius": string;
+    radius: string;
     [key: string]: string;
 }
 interface IBox {
-    "shadow": string;
-    "hovershadow": string;
+    shadow: string;
+    hovershadow: string;
     [key: string]: string;
 }
 declare const theme: IThemeInterface;

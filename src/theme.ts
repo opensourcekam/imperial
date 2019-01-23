@@ -2,21 +2,21 @@ interface IColors {
   primary: string;
   secondary: string;
   tertiary: string;
-  "lightgrey": string;
-  "heavygrey": string;
-  "text": string;
-  "headline": string;
+  lightgrey: string;
+  heavygrey: string;
+  text: string;
+  headline: string;
   [key: string]: string;
 }
 
 interface IBorders {
-  "radius": string;
+  radius: string;
   [key: string]: string;
 }
 
 interface IBox {
-  "shadow": string;
-  "hovershadow": string;
+  shadow: string;
+  hovershadow: string;
   [key: string]: string;
 }
 
@@ -31,7 +31,7 @@ const theme: IThemeInterface = {
     headline: "#3F4656"
   },
   border: {
-    radius: "3px",
+    radius: "3px"
   },
   box: {
     shadow: "none",

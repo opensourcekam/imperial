@@ -9,8 +9,8 @@ export interface IProps {
     shadow?: boolean;
     roundness?: number;
 }
-declare class Imperial extends React.Component<IProps, any> {
+declare class Provider extends React.Component<IProps, any> {
     componentWillMount(): void;
     render(): null;
 }
-export { Imperial };
+export { Provider };

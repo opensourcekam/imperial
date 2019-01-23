@@ -13,9 +13,9 @@ export interface IProps {
   roundness?: number;
 }
 
-class Imperial extends React.Component<IProps, any> {
+class Provider extends React.Component<IProps, any> {
   public componentWillMount() {
-    const { colors, shadow, roundness } = this.props;
+    const { colors, shadow, roundness = 3 } = this.props;
     const newTheme: IThemeInterface = {
       ...theme,
       color: {
@@ -37,26 +37,26 @@ class Imperial extends React.Component<IProps, any> {
     };
 
     let base = `
-    * {
-      box-sizing: inherit;
-    }
-    
-    *:before, *:after {
-      box-sizing: inherit;
-    }
-    
-    body {
-      font-size: 16px;
-      line-height: 22px;
-      color: var(--lightgrey-color);
-      background: #F5F9FF;
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      box-sizing: border-box;
-    }    
+      * {
+        box-sizing: inherit;
+      }
+      
+      *:before, *:after {
+        box-sizing: inherit;
+      }
+      
+      body {
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--text-color);
+        background: #F5F9FF;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+      }
     `;
 
     let root = ``;
@@ -89,4 +89,4 @@ class Imperial extends React.Component<IProps, any> {
   }
 }
 
-export { Imperial };
+export { Provider };

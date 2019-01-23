@@ -1,4 +1,4 @@
-export * from "./Imperial";
+export * from "./Provider";
 export * from "./components";
 export * from "./theme";
 export * from "./icons";

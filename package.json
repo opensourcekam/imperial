@@ -40,5 +40,10 @@
     "storybook-addon-jsx": "^6.0.0",
     "ts-jest": "^23.10.5",
     "typescript": "3.2.2"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.1.3"
   }
 }

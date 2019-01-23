@@ -4,6 +4,7 @@ const Button = styled.button`
   border-radius: var(--radius-border);
   --color: var(--primary-color);
   --text: #fff;
+  cursor: pointer;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -20,15 +21,22 @@ const Button = styled.button`
   text-decoration: none;
   transition: color 0.3s ease, box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: var(--shadow-box);
+
   &:link,
   &:active,
   &:visited,
   &:focus {
     color: var(--text-color);
+    svg {
+      transition: fill 0.2s ease;
+      fill: var(--text-color);
+    }
   }
+
   &:hover {
     box-shadow: var(--hovershadow-box);
   }
+
   svg {
     position: relative;
     left: -4px;
@@ -44,6 +52,7 @@ const Button = styled.button`
       right: -4px;
     }
   }
+
   &.icon {
     padding: 9px;
     svg {
@@ -53,6 +62,7 @@ const Button = styled.button`
       margin: 2px;
     }
   }
+
   &.sm {
     font-size: 14px;
     border-radius: var(--radius-border);
@@ -69,6 +79,7 @@ const Button = styled.button`
       margin: 3px 0;
     }
   }
+
   &.border {
     --text: var(--color);
     background: none;

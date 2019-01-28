@@ -1,6 +1,6 @@
 {
   "name": "imperial-design",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "main": "lib",
   "types": "lib",
@@ -25,7 +25,6 @@
   ],
   "devDependencies": {
     "@storybook/addon-info": "^4.1.6",
-    "@types/styled-components": "^4.1.6",
     "@storybook/addon-knobs": "^4.1.6",
     "@storybook/addons": "^4.1.6",
     "@storybook/react": "^4.1.6",
@@ -34,6 +33,7 @@
     "@types/react": "16.7.20",
     "@types/react-dom": "16.0.11",
     "@types/storybook__react": "^4.0.0",
+    "@types/styled-components": "^4.1.6",
     "babel-loader": "^8.0.5",
     "jest": "^23.6.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",

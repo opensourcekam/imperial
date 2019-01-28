@@ -5,6 +5,7 @@ const T = styled.textarea.attrs({
   rows: 4,
   cols: 50
 })`
+  resize: ${({ resize }: { resize: boolean }) => (resize ? "initial" : "none")};
   --color: var(--primary-color);
   outline: none;
   display: block;
@@ -39,7 +40,7 @@ const FormElement = styled.div`
   }
 `;
 
-const Text: React.SFC<any> = ({ label, ...props }) => {
+const TextArea: React.SFC<any> = ({ label, ...props }) => {
   return (
     <FormElement>
       <label>{label}</label>
@@ -48,4 +49,4 @@ const Text: React.SFC<any> = ({ label, ...props }) => {
   );
 };
 
-export default Text;
+export default TextArea;

@@ -40,11 +40,11 @@ const FormElement = styled.div`
   }
 `;
 
-const TextArea: React.SFC<any> = ({ label, ...props }) => {
+const TextArea: React.SFC<any> = ({ label, resize, ...props }) => {
   return (
     <FormElement>
       <label>{label}</label>
-      <T {...props} />
+      <T resize={resize} {...props} />
     </FormElement>
   );
 };

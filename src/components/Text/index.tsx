@@ -1,9 +1,7 @@
 import * as React from "react";
 import styled from "../../styled-components";
 
-const T = styled.input.attrs({
-  type: "text"
-})`
+const T = styled.input`
   --color: var(--primary-color);
   outline: none;
   display: block;

@@ -27,7 +27,7 @@
     "@storybook/addon-info": "^4.1.6",
     "@storybook/addon-knobs": "^4.1.6",
     "@storybook/addons": "^4.1.6",
-    "@storybook/react": "^4.1.6",
+    "@storybook/react": "^6.5.13",
     "@types/jest": "^23.3.12",
     "@types/node": "10.12.18",
     "@types/react": "16.7.20",
